@@ -1,2 +1,6 @@
-// El styles lo importamos aquí, ya se carga después al compilar todo
-import '../scss/styles.scss';
+import "../scss/styles.scss";
+
+// //Callback --función que ejecuta otra función.
+// //callback y printdata son lo mismo (o por lo menos son intercambiables)
+
+
