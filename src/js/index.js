@@ -45,3 +45,13 @@ function goMayus (array){
 const ejecucionTres = goMayus(minus);
 
 console.log(ejecucionTres)
+
+//- Crea una función que reciba un array de palabras y una letra. La función devolverá un array con las palabras que comiencen por esa letra, si no hay mostrará un mensaje por consola diciendo que ninguna palabra coincide.
+
+const wordAndChar =['rosca','mayer','r']
+
+function twoWords (array){
+    const result = array.filter(number => {
+        return number
+    })
+}
