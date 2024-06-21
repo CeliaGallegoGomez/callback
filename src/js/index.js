@@ -145,12 +145,12 @@ evenAndOdd([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 // - Crea una función que reciba un array con 5 palabras, debes imprimir por consola un array que contenga la inicial y la última letra de cada palabra en mayúsculas, es decir, si nuestra función recibiera un array con ['hola', 'adios', 'gato', 'perro', 'casa'] deberá imprimir por consola ['H', 'A', 'A', 'S', 'G', 'O', 'P','O', 'C', 'A']. Si te quedas atascado puedes investigar la función flatMap() y flat()
 
-const users = ["Ana", "Angel", "Carlos", "Laura"];
-const numberss = [1, 6, 3, 4, 11, 32, 2];
 
-users.sort((a, b) => a.localeCompare(b));
-numbers.sort((a, b) => a - b);
-console.log(users);
+const firstAndLastLetterArray = words => {
+  const firstAndLastLetter = words.map(word =>
+    const firstLetter =words.charAt(0).toUpperCase();
+  )
+}
 
 // - Crea una función que reciba un array de 10 números y te diga si alguno es mayor de 5.
 
@@ -161,3 +161,75 @@ const isThisNumberBigger = (array) => {
 };
 
 isThisNumberBigger([6, 3, 9, 12, 4, 8, 5, 89, 4, 7]);
+
+//- Crea una función que reciba un array de 5 palabras y un número y te devuelva un array con las palabras que tienen esa longitud, por ejemplo si le envias (['hola', 'adios', 'gato', 'perro', 'casa'], 4), te devolverá un array con ['hola', 'gato', 'casa']
+makeAnnArray(["alumbre", "color", "calor", "azucar", "mesilla"], 5);
+
+const makeAnnArray = (array, num) => {
+  const thisArray = array.filter((word) => {
+    return word.length = num;
+  });
+
+ console.log(thisArray)
+
+// 13 - Crea una función que reciba un array de números y un número y te devuelva un array con los números que sean divisores de ese número
+
+thisAreNumbers([3, 64, 24, 8, 1, 90, 32, 12], 8);
+
+const thisAreNumbers = (array, number) => {
+  const diferentArray = array.filter((numbers) => {
+    return numbers % number === 0;
+  });
+
+  console.log(diferentArray);
+};
+
+//14 - Crea una función que reciba este array y te devuelva sólo los usuarios cuya edad sea menor de 30
+// const array = [
+//   { name: 'John', age: 25 },
+//   { name: 'Jane', age: 30 },
+//   { name: 'Bob', age: 20 }
+//   ];
+  
+// 15 - Crea una función que reciba un array relleno con números y te diga si todos son pares o no.
+
+moreNumbers([1,2,3,4,5,6,7,8,9,10])
+
+const moreNumbers = (numbers)=> {
+  const result =numbers.every(number => number %2 ===0);
+
+  if(result){
+    console.log('Todos son pares')
+  }else {
+    console.log('No son pares todos')
+  }
+}
+
+//16 - Crea una función que reciba un array de 5 palabras y las ordene en base a su longitud, de menor a mayor.
+const sortByLength=words=>{
+  words.sort((a,b)=> a.length-b.length);
+  console.log(words)
+}
+
+//17 - Crea una función que reciba una palabra e imprima la misma palabra en orden inverso conservando las mayúsculas y las minúsculas. Si recibe "Mariposas" deberá imprimir "sasopiraM". No se puede usar reverse() 😊 (investiga la función reduceRight
+
+const reverseWord = word =>{
+  const splittedWord =word.split('')
+
+  const newWord =splittedWord.reduce((acc,letter))=> {
+    return letter+acc;
+  };
+
+  const newWords2 =splittedWord.reduce((acc,letter))
+
+  console.log(newWord);
+}
+
+
+
+//const users = ["Ana", "Angel", "Carlos", "Laura"];
+// const numberss = [1, 6, 3, 4, 11, 32, 2];
+
+// users.sort((a, b) => a.localeCompare(b));
+// numbers.sort((a, b) => a - b);
+// console.log(users);
